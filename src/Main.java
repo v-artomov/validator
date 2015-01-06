@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -30,7 +29,7 @@ public class Main {
         rightArray.add(new Phone.Builder().vendor("APPLE").model("iPhone6").build());
 
         // create resource delegate:
-        ArrayHelperResource resource = new ArrayHelperResource();
+        CollectionUtilsResource resource = new CollectionUtilsResource();
 
         System.out.println("LEFT ARRAY:");
         resource.println(leftArray);
@@ -41,7 +40,7 @@ public class Main {
 
         System.out.println();
         System.out.println("MERGE:");
-        ArrayHelper AH1 = new ArrayHelper(resource);
+        CollectionUtils AH1 = new CollectionUtils(resource);
         ArrayList merged = AH1.merge(leftArray, rightArray);
         resource.println(merged);
     }

@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -9,10 +8,10 @@ import java.util.ArrayList;
 public class CollectionUtils {
     //
     // resource for delegating:
-    private final ArrayHelperResource resource;
+    private final CollectionUtilsResource resource;
     //
     //
-    public CollectionUtils(ArrayHelperResource resource) {
+    public CollectionUtils(CollectionUtilsResource resource) {
         this.resource = resource;
     }
     //
