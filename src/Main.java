@@ -40,7 +40,12 @@ public class Main {
 
         System.out.println();
         System.out.println("MERGE:");
-        CollectionUtils AH1 = new CollectionUtils(resource);
+        CollectionUtils AH1 = new CollectionUtils(resource, new Validator() {
+            @Override
+            public boolean validate(Phone phone) {
+                return false;
+            }
+        });
         ArrayList merged = AH1.merge(leftArray, rightArray);
         resource.println(merged);
     }
